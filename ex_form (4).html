@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de formulário</title>
+    </head>
+    <body>
+        <form action="processo.php" method="get">
+            <!--ACTION: para especificar qual página receberá os dados do form 
+            METHOD: forma de envio dos dados. Duas maneiras:
+             * GET: envio dos dados pela própria URL
+             * POST: envio dos dados pela conexão HTTP-->
+            <label for="nome_cliente">Insira seu nome:</label>
+            <!-- FOR: utilizar o id do respectivo componente. Importante para a acessibilidade do site -->
+            <input type="text" name="nome_cliente" id="nome_cliente" required> 
+            <!-- required = campo obrigatório -->
+            <!--NAME: tipo nome de variável, será usado pelo script de processamento  
+                ID: identificação única do componente-->
+                <label for="data_nasc">Data de nascimento:</label>
+                <input type="date" name="data_nasc" id="data_nasc"> <!-- nome_cliente é o único id que não pode ser usado aqui -->
+                <label for="email_cadastro">E-mail de cadastro:</label>
+                <input type="email" name="email_cadastro" id="email_cadastro">
+                <label for="uf">UF: </label>
+                <select name="uf" id="uf">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </select>
+                <label>Informe seu curso:</label>
+                <input type="radio" name="curso" id="c1" value="adm"><label for="c1">ADM</label>
+                <input type="radio" name="curso" id="c2" value="agro"><label for="c2">AGRO</label>
+                <input type="radio" name="curso" id="c3" value="info"><label for="c3">INFO</label>
+                <labeL>Selecione suas matérias preferidas:</labeL>
+                <input type="checkbox" name="matéria[]" id="m1" value="matematica"><label for="m1">Matemática</label>
+                <input type="checkbox" name="matéria[]" id="m2" value="ingles"><label for="m2">Inglês</label>
+                <input type="checkbox" name="matéria[]" id="m3" value="artes"><label for=""m3>Artes</label>
+                <input type="checkbox" name="matéria[]" id="m4" value="programacao"><label for="m4">Programação</label>
+                <input type="checkbox" name="acordo" id="acordo" value="Y"><label for="acordo">Li e estou de acordo.</label>
+                <label for="">Deixe seu comentário:</label>
+                <textarea name="" id=""></textarea>
+                <input type="submit" name="enviar" id="enviar" value="Enviar dados">
+        </form>
+        <div id="news">
+            <p>Lorem ipsum dolor sit amet, consectetur <span id="data">14/04/2023</span> adipiscing elit. Integer elementum, ex vel dictum euismod, diam dui faucibus enim, vitae tempus odio velit sed ligula. Maecenas at scelerisque ipsum. Maecenas lacinia metus id turpis ornare consectetur. Pellentesque sed turpis risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam dictum consectetur velit. Praesent et enim tempor nibh tincidunt aliquam. Maecenas at odio at erat interdum efficitur nec in nunc.</p>
+        </div>
+    </body>
+</html>

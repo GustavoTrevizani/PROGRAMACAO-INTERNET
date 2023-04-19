@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+</head>
+<body>
+    <h1>Questionário de filmes</h1>
+    <fieldset>
+        <legend><strong>Suas preferências</strong></legend>
+    <form action="processo.php" method="get">
+    <label for="periodo"><br><strong>Qual período do dia você mais assiste TV? </strong></label>
+        <select name="periodo" id="periodo">
+            <option value="ma">Manhã</option>
+            <option value="ta">Tarde</option>
+            <option value="no">Noite</option>
+            <option value="mad">Madrugada</option>
+        </select>
+        <label><br><strong>O que você mais assiste?</strong></label>
+            <input type="radio" name="tipo" id="t1" value="anime"><label for="t1">Anime</label>
+            <input type="radio" name="tipo" id="t2" value="documentario"><label for="t2">Documentário</label>
+            <input type="radio" name="tipo" id="t3" value="dorama"><label for="t3">Dorama</label>
+            <input type="radio" name="tipo" id="t4" value="filme"><label for="t4">Filme</label>
+            <input type="radio" name="tipo" id="t5" value="novela"><label for="t5">Novela</label>
+            <input type="radio" name="tipo" id="t6" value="serie"><label for="t6">Série</label>
+        <label><br><strong>Selecione seus gêneros favoritos:</strong></label>
+        <input type="checkbox" name="genero[]" id="g1" value="acao"><label for="g1">Ação</label>
+        <input type="checkbox" name="genero[]" id="g2" value="aventura"><label for="g2">Aventura</label>
+        <input type="checkbox" name="genero[]" id="g3" value="comedia"><label for="g3">Comédia</label>
+        <input type="checkbox" name="genero[]" id="g4" value="fantasia"><label for="g4">Fantasia</label>
+        <input type="checkbox" name="genero[]" id="g5" value="ficcao"><label for="g5">Ficção</label>
+        <input type="checkbox" name="genero[]" id="g6" value="romance"><label for="g6">Romance</label>
+        <input type="checkbox" name="genero[]" id="g7" value="terror"><label for="g7">Terror</label>
+        <input type="checkbox" name="genero[]" id="g8" value="outros"><label for="g8">Outros</label>
+        <br><input type="submit" name="enviar" id="enviar" value="Enviar dados">     
+    </form>
+    </fieldset>     
+
+    <table border="2">
+        <caption><br><strong>Tabela de respostas</strong></caption>
+        <thead>
+            <tr><th rowspan="1">Pessoas</th><th colspan="1">Período do dia</th><th colspan="1">Mais assiste</th><th colspan="1">Gênero favorito</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Pessoa 1</td><td> </td><td> </td><td> </td></tr>
+            <tr><td>Pessoa 2</td><td> </td><td> </td><td> </td></tr>
+            <tr><td>Pessoa 3</td><td> </td><td> </td><td> </td></tr>
+            <tr><td>Pessoa 4</td><td> </td><td> </td><td> </td></tr>
+        </tbody>
+    </table>
+    </body>
+</html>

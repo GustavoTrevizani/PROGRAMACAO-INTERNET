@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopBooks - Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo do site ShopBooks"> 
+        <nav>
+            <br><a href="paginainicial.html">Página inicial</a>
+            <br><a href="livros.html">Livros</a>
+            <br><a href="ranking.html">Ranking</a>
+            <br><a href="biblioteca.html">Minha biblioteca</a>
+            <br><a href="login.html">Login</a>
+            <br><a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+    <h2>Cadastro do ShopBooks</h2>
+	<form action="login.html" method="get">
+		<label for="nome_completo">Nome completo:</label>
+		<input type="text" id="nome_completo" name="nome_completo" required><br><br>
+
+        <label for="nome_usuario">Nome de usuário:</label>
+		<input type="text" id="nome_usuario" name="nome_usuario" required><br><br>
+
+        <label for="data_nasc">Data de nascimento:</label>
+		<input type="date" id="data_nasc" name="data_nasc" required><br><br>
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado" required>
+            <option value="">Escolha o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantis</option>
+            <option value="DF">Distrito Federal</option>
+        </select><br><br>
+
+		<label for="email">E-mail de cadastro:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="senha">Senha:</label>
+		<input type="password" id="senha" name="senha" required><br><br>
+
+		<label for="confirme_senha">Confirme a senha:</label>
+		<input type="password" id="confirme_senha" name="confirme_senha" required><br><br>
+
+
+
+		<input type="submit" value="Cadastrar">
+    </form>
+    <p>Já possui cadastro? Faça o <a href="login.html">login</a>.</p>
+	<p>Esqueceu sua senha? <a href=" ">Clique aqui</a> para recuperá-la.</p>
+    <footer>
+        <h4>Projeto de WEB por Gustavo e Naoma</h4>
+    </footer>
+</body>
+</html>

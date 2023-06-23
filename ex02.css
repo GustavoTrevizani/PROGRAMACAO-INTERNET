@@ -6,7 +6,7 @@ ul li{
     color: red;
 }
 
-li {
+#produtos .nome_produto {
     color:blue;
     font-weight:bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,4 +22,8 @@ body .produto ul li{
 
 #produtos li{
     color:pink;
+}
+
+#container li{
+    color:blueviolet;
 }

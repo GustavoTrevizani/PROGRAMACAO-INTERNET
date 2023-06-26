@@ -1,0 +1,7 @@
+#container {
+    aborder: solid 1px black;
+    background-color: rgb(200, 100, 150); /*PODE-SE UTILIZAR #9D4AB1, rgb vai até 255(branco), 0 (preto), números repetidos =  tons de cinza c/ mais intensidade, pode-se usar percentual*/
+    width: 90%;
+    margin: 0 auto; /*0 no top e no bottom, auto no left e right*/
+    padding: 20px;
+}

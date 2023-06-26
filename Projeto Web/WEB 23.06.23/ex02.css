@@ -1,0 +1,29 @@
+#produtos ul{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li{
+    color: red;
+}
+
+#produtos .nome_produto {
+    color:blue;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body .produto ul li{
+    color:orange;
+};
+
+.produto li{
+    color:green;
+}
+
+#produtos li{
+    color:pink;
+}
+
+#container li{
+    color:blueviolet;
+}

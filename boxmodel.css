@@ -1,7 +1,17 @@
 #container {
     aborder: solid 1px black;
-    background-color: rgb(200, 100, 150); /*PODE-SE UTILIZAR #9D4AB1, rgb vai até 255(branco), 0 (preto), números repetidos =  tons de cinza c/ mais intensidade, pode-se usar percentual*/
-    width: 90%;
+    background-color: rgb(90%, 80%, 32%); /*PODE-SE UTILIZAR #9D4AB1, rgb vai até 255(branco), 0 (preto), números repetidos =  tons de cinza c/ mais intensidade, pode-se usar percentual*/
+    width: 80%;
     margin: 0 auto; /*0 no top e no bottom, auto no left e right*/
     padding: 20px;
+}
+
+header{
+    height: 100px;
+    margin-bottom: 50px;
+    border: 1px dashed /*tracejado*/ red;
+}
+
+.produto{
+    margin: 10px 20px 20px 10px;  /*T(top)  R(right)  B(baixo)  L(left)*/
 }

@@ -1,5 +1,5 @@
 #container {
-    aborder: solid 1px black;
+    border: solid 1px black;
     background-color: rgb(90%, 80%, 32%); /*PODE-SE UTILIZAR #9D4AB1, rgb vai até 255(branco), 0 (preto), números repetidos =  tons de cinza c/ mais intensidade, pode-se usar percentual*/
     width: 80%;
     margin: 0 auto; /*0 no top e no bottom, auto no left e right*/
@@ -11,7 +11,20 @@ header{
     margin-bottom: 50px;
     border: 1px dashed /*tracejado*/ red;
 }
+ 
+#produtos h2{
+    width: 100%;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .produto{
-    margin: 10px 20px 20px 10px;  /*T(top)  R(right)  B(baixo)  L(left)*/
+    amargin: 10px 20px 20px 10px;  /*T(top)  R(right)  B(baixo)  L(left)  - TRouBLe*/
+    width: 45%;
+    border: 1px dotted black;
+    margin-bottom: 20px;
 }

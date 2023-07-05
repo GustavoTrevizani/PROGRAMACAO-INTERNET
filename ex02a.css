@@ -9,4 +9,9 @@ header h1{
 
 #produtos h2{
     font-size: 1.5em;
+    text-align: center;
+}
+
+.produto .descricao_produto{
+    font-size:0.9em;
 }

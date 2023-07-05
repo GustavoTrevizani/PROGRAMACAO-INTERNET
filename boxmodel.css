@@ -24,7 +24,7 @@ header{
 
 .produto{
     amargin: 10px 20px 20px 10px;  /*T(top)  R(right)  B(baixo)  L(left)  - TRouBLe*/
-    width: 45%;
+    width: 30%;
     border: 1px dotted black;
     margin-bottom: 20px;
 }

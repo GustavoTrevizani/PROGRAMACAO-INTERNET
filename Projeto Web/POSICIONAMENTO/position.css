@@ -1,0 +1,18 @@
+#menu-principal {
+    background-color: #aaa;
+}
+
+#menu-principal li {
+    display: inline-block;
+    position: relative; /*para tornar os itens proporcionados*/
+}
+
+.submenu{
+    background-color: #aaa;
+    position: absolute;
+    left: -1000px;
+}
+
+#menu-principal li:hover .submenu{
+    left: 0px;
+}

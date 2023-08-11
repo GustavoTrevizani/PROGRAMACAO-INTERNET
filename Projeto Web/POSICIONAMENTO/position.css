@@ -1,5 +1,14 @@
+#acesso{
+    background-color: black;
+    color:white;
+    position: fixed;
+    bottom: 0;
+}
+
 #menu-principal {
     background-color: #aaa;
+    display: flex;
+    justify-content: space-around;
 }
 
 #menu-principal li {

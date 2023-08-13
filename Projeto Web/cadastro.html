@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="cadastro.css">
     <title>ShopBooks - Cadastro</title>
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <img src="logo.png" alt="Logo do site ShopBooks"> 
         <nav>
             <br><a href="paginainicial.html">Página inicial</a>
@@ -17,7 +20,8 @@
             <br><a href="cadastro.html">Cadastro</a>
         </nav>
     </header>
-    <h2>Cadastro do ShopBooks</h2>
+    <div class="container"> 
+    <h2>Cadastro do ShopBooks:</h2>
 	<form action="login.html" method="get">
 		<label for="nome_completo">Nome completo:</label>
 		<input type="text" id="nome_completo" name="nome_completo" required><br><br>
@@ -69,14 +73,13 @@
 		<label for="confirme_senha">Confirme a senha:</label>
 		<input type="password" id="confirme_senha" name="confirme_senha" required><br><br>
 
-
-
 		<input type="submit" value="Cadastrar">
     </form>
     <p>Já possui cadastro? Faça o <a href="login.html">login</a>.</p>
 	<p>Esqueceu sua senha? <a href=" ">Clique aqui</a> para recuperá-la.</p>
+    </div>
     <footer>
-        <h4>Projeto de WEB por Gustavo e Naoma</h4>
+        <h4>Projeto de WEB por Gustavo Trevizani e Naoma Rufino</h4>
     </footer>
 </body>
 </html>

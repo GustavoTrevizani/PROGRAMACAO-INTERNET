@@ -1,0 +1,44 @@
+#apresentacao {
+    text-align: center;
+    padding: 50px;
+}
+
+#apresentacao h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#apresentacao h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#apresentacao button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#objetivo {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#objetivo h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#objetivo p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#objetivo strong {
+    font-weight: bold;
+}

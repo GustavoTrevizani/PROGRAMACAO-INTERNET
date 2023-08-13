@@ -3,6 +3,7 @@
     color:white;
     position: fixed;
     bottom: 0;
+    right: 0;
 }
 
 #menu-principal {
@@ -12,7 +13,10 @@
 }
 
 #menu-principal li {
-    display: inline-block;
+    adisplay: inline-block;
+    aborder: 1px solid black;
+    text-align: center;
+    width: 100px;
     position: relative; /*para tornar os itens proporcionados*/
 }
 
@@ -23,5 +27,5 @@
 }
 
 #menu-principal li:hover .submenu{
-    left: 0px;
+    left: 0;
 }

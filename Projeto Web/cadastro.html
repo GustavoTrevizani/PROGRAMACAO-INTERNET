@@ -9,11 +9,22 @@
     <title>ShopBooks - Cadastro</title>
 </head>
 <body>
+    <div id="corpo">
     <header id="cabecalho">
         <img src="logo.png" alt="Logo do site ShopBooks"> 
         <nav>
             <br><a href="paginainicial.html">Página inicial</a>
-            <br><a href="livros.html">Livros</a>
+            <div class="dropdown">
+                <a href="livros.html" class="dropdown">Livros</a>
+                <div class="dropdown-content">
+                    <a href="#fantasia">Fantasia</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#ficcao-cientifica">Ficção Científica</a>
+                    <a href="#distopia">Distopia</a>
+                    <a href="#horror">Horror</a>
+                    <a href="#classicos">Clássicos</a>
+                </div>
+            </div>
             <br><a href="ranking.html">Ranking</a>
             <br><a href="biblioteca.html">Minha biblioteca</a>
             <br><a href="login.html">Login</a>
@@ -81,5 +92,6 @@
     <footer>
         <h4>Projeto de WEB por Gustavo Trevizani e Naoma Rufino</h4>
     </footer>
+</div>
 </body>
 </html>

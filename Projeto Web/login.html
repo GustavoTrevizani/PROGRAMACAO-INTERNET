@@ -9,11 +9,23 @@
     <title>ShopBooks - Login</title>
 </head>
 <body>
+    <div>
+    <div id="corpo">
     <header id="cabecalho">
         <img src="logo.png" alt="Logo do site ShopBooks"> 
         <nav>
             <br><a href="paginainicial.html">Página inicial</a>
-            <br><a href="livros.html">Livros</a>
+            <div class="dropdown">
+                <a href="livros.html" class="dropdown">Livros</a>
+                <div class="dropdown-content">
+                    <a href="#fantasia">Fantasia</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#ficcao-cientifica">Ficção Científica</a>
+                    <a href="#distopia">Distopia</a>
+                    <a href="#horror">Horror</a>
+                    <a href="#classicos">Clássicos</a>
+                </div>
+            </div>
             <br><a href="ranking.html">Ranking</a>
             <br><a href="biblioteca.html">Minha biblioteca</a>
             <br><a href="login.html">Login</a>
@@ -23,13 +35,13 @@
     <div class="container"> 
     <section>
     <h2>Login do ShopBooks:</h2>
-    <form action="biblioteca.html" method="get">
+    <form action="biblioteca.html" method="get" target="_blank">
 
-        <label for="nome_usuario">Nome de usuário ou e-mail:</label>
-        <input type="text" id="nome_usuario" name="nome_usuario" required><br><br>
+        <label for="m_nome_usuario">Nome de usuário ou e-mail:</label>
+        <input type="text" id="m_nome_usuario" name="nome_usuario" required><br><br>
     
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required><br><br>
+        <label for="m_senha">Senha:</label>
+        <input type="password" id="m_senha" name="senha" required><br><br>
     
         <input type="submit" value="Entrar">
     </form>
@@ -40,5 +52,7 @@
     <footer>
         <h4>Projeto de WEB por Gustavo Trevizani e Naoma Rufino</h4>
     </footer>
+    </div>
+    </div>
     </body>
 </html>

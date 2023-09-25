@@ -8,7 +8,23 @@ $(document).ready(function(){
 */
 
     variavel_qualquer = $("p").text(); // obtenção de conteúdo textual
-    alert(variavel_qualquer);
-    $("p").text("Mensagem trocada"); // mudança de conteúdo textual
+    //alert(variavel_qualquer);
+    num = 10
+    $("#especial").text("Mensagem trocada" + num); // mudança de conteúdo textual
 
+    //monitorar o evento de clique no botão Salvar
+    $("#salvar").click(function(){
+        //alert("OI");
+        /*
+        valor = $("#nome").val();
+        uf = $("#uf").val();
+        if (uf == "RS") {
+            mensagem = "Você é do Rio Grande do Sul"
+        } else {
+            mensagem = "Você é do exterior"
+        }
+        alert(mensagem);
+        */
+       $("#uf").append("<option value='TE'>Teste</option>")
+    })
 })

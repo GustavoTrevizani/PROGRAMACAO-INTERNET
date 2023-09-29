@@ -25,6 +25,10 @@ $(document).ready(function(){
         }
         alert(mensagem);
         */
-       $("#uf").append("<option value='TE'>Teste</option>")
+       sigla = $("#sigla").val();
+       nome = $("#nome").val();
+       $("#uf").append("<option value='"+sigla+"'>"+nome+"</option>")
+       $("#sigla").val("");
+       $("#nome").val("");
     })
 })

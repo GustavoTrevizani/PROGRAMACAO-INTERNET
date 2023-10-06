@@ -14,11 +14,23 @@
             <input type="text" id="nome">
             <label for="datanasc">Data de nascimento: </label>
             <input type="date" id="datanasc">
+            <label for="cidade">Cidade: </label>
+            <input type="text" id="cidade">
+            <label for="uf">UF: </label>
+            <select id="uf">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </select>
+            <label for="zerofilhos">Quantidade de filhos: </label> 
+            <input type="radio" id="zerofilhos" name="filhos" value="0"><label for="zerofilhos">0 </label>
+            <input type="radio" id="umatresfilhos" name="filhos" value="1 a 3"><label for="umaatresfilhos">1 a 3 </label>
+            <input type="radio" id="maisdetres" name="filhos" value="Mais de 3"><label for="maisdetres">Mais de 3 </label>
             <input type="button" id="salvar" value="Salvar">
         </form>
         <table id="clientes">
             <thead>
-                <tr><th>Nome</th><th>Data de Nascimento</th></tr>
+                <tr><th>Nome</th><th>Data de Nascimento</th><th>Cidade</th><th>UF</th><th>Quant filhos</th></tr>
             </thead>
             <tbody>
 

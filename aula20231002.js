@@ -12,7 +12,16 @@ $(document).ready(function(){
         $("#clientes tbody").empty();
     })
 
+    // essa função abaixo não funciona, porque o botão excluir não estava originalmente no HTML.
     $(".excluir").click(function(){
         alert("OI");
     })
+
+    // a função abaixo funciona
+    $("#clientes tbody").on("click",".excluir", function(){
+        //alert("OI!");
+        $(this).closest("tr").remove();
+        quant_linhas = $("#clientes tbody tr").length;
+        $("#quant").text(quant_linhas);
+    }) 
 })

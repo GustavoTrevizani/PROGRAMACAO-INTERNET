@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#excluir-selec").click(function(){
+        alert($("#arquivo").val().replace("C:\\fakepath\\", ''));
         $(".selecao:checked").each(function(){
             $(this).closest("tr").remove(); 
         })
@@ -7,7 +8,11 @@ $(document).ready(function(){
 
     $("#marca").change(function(){
         marca = $(this).val();
-        $("#veiculos tbody tr").hide(500);
-        $("."+marca).closest("tr").show();
+        if (marca == "--Todos--") {
+            $("#veiculos tbody tr").show();
+        } else {
+            $("#veiculos tbody tr").hide();
+            $("."+marca).closest("tr").show();
+        }
     })
 })

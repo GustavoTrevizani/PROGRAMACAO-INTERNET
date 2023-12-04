@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="trabalhoweb.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="trabalhoweb.js" defer></script>
+    <title>ShopALL</title>
+</head>
+<body>
+    <h2>Adicionar Produto</h2>
+    <div id="produtos">
+        <div class="produto">
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" class="nomeProduto">
+        </div>
+        <div class="produto">
+            <label for="imagemProduto">Escolher Imagem:</label>
+            <input type="file" name="imagemProduto" id="imagemProduto" accept="image/*">
+        </div>
+        <div class="produto">
+            <label for="precoProduto">Preço do Produto:</label>
+            <input type="text" id="precoProduto" class="precoProduto">
+        </div>
+        <div class="produto">
+            <label for="categoriaProduto">Categoria do Produto:</label>
+            <select id="categoriaProduto" class="categoriaProduto">
+                <option value="Todos">--Todos--</option>
+                <option value="Automotivo">Automotivo</option>
+                <option value="Brinquedos">Brinquedos</option>
+                <option value="Decoracao">Decoracao</option>
+                <option value="Eletrodomesticos">Eletrodomesticos</option>
+                <option value="Informática">Informática</option>
+                <option value="Livros">Livros</option>
+                <option value="Papelaria">Papelaria</option>
+                <option value="Roupas">Roupas</option>
+            </select>
+        </div>
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+        <div>
+            <h2>Escolher Categoria</h2>
+            <label for="escolherCategoria">Mostrar Produtos por Categoria:</label>
+            <select id="escolherCategoria">
+                <option>--Todos--</option>
+                <option>Automotivo</option>
+                <option>Brinquedos</option>
+                <option>Decoração</option>
+                <option>Eletrodomesticos</option>
+                <option>Informática</option>
+                <option>Livros</option>
+                <option>Papelaria</option>
+                <option>Roupas</option>
+            </select>
+        </div>
+        <div id="produtosContainer"></div>
+    </div>
+</body>
+
+</html>
